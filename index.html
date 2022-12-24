@@ -5,51 +5,65 @@
     <meta name="author" content="Damian Pluskwa">
     <meta name="description" content="">
     <title>Portfolio - Damian Pluskwa</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 <body>
     <header>
-        <h1>Portfolio - Damian Pluskwa</h1>
-
-        <p>Obecnie pracuje jako operator frezarek CNC. Jestem początkującym programistą. Studjuję również dyplomację na ASW.</p>
-
-        <section>
+        <!-- <section>
             <img src="/img/programowanie.jpg" alt="programowanie">
             <img src="/img/frezowanie.jpg" alt="frezowanie">
             <img src="/img/studia.jpg" alt="studia">
-        </section>
-        <nav aria-label="primary-navigation">
-            <ul>
-                <li>
-                    <a href="#umiejetnosci">Umiejętności</a>
+        </section> -->
+        <div class="logo">
+            <p>&ltdevdamian&gt</p>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav aria-label="primary-navigation" class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#technologies" class="nav__link">Technologies</a>
                 </li>
-                <li>
-                    <a href="#projekty">Projekty</a>
+                <li class="nav__item">
+                    <a href="#projekty" class="nav__link">Projekty</a>
                 </li>
-                <li>
-                    <a href="#oMnie">O mnie</a>
+                <li class="nav__item">
+                    <a href="#oMnie" class="nav__link">O mnie</a>
                 </li>
-                <li>
-                    <a href="#kontakt">Kontakt</a>
+                <li class="nav__item">
+                    <a href="#kontakt" class="nav__link">Kontakt</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <hr>
-
     <main>
-        <article id="umiejetnosci">
-            <h2>Posiadane umiejętności</h2>
-            <p>Języki programowania:</p>
+        <!--  Introduction  -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Damian Pluskwa</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">software developer</p>
+            <img src="/img/picture-1.jpg" alt="a picture of Damian smiling" class="intro__img">
+        </section>
+
+
+        <!-- Technologies -->
+        <article id="technologies" class="technologies">
+            <h2 class="article__title">Technologies</h2>
+            <p class="article__subtitle section__subtitle--technologies">I'm working with</p>
             <ul>
                 <li>
                     Python
-                    <ul>
-                        <li>
-                            Django
-                        </li>
-                    </ul>
+                </li>
+                <li>
+                    Django
                 </li>
                 <li>
                     JavaScript
@@ -60,21 +74,21 @@
                 <li>
                     CSS
                 </li>
-            </ul>
-
-            <p>Dodatkowe technologie:</p>
-            <ul>
-                <li>Windows</li>
-                <li>Git/GitHub</li>
+                <li>
+                    Windows
+                </li>
+                <li>
+                    Git/GitHub
+                </li>
             </ul>
         </article>
 
         <hr>
 
         <article id="projekty">
-            <h2>Projekty</h2>
+            <h2 class="article__title">Projekty</h2>
             <section>
-                <h3>Aplikacja biblioteczna</h3>
+                <h3 class="section__title">Aplikacja biblioteczna</h3>
                 <ul>
                     <li>python</li>
                     <li>django</li>
@@ -83,10 +97,10 @@
                     <li>sqlite</li>
                     <li>Git</li>
                 </ul>
-                <p>Aplikacja słożąca do katalogowania oraz wyporzyczania książek zlokalizowanych w bazie danych.</p>
+                <p>Aplikacja służąca do katalogowania oraz wypożyczania książek zlokalizowanych w bazie danych.</p>
             </section>
             <section>
-                <h3>Strona do portfolio</h3>
+                <h3 class="section__title">Strona do portfolio</h3>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -99,13 +113,30 @@
         <hr>
 
         <article id="oMnie">
-            <h2>O mnie</h2>
+            <h2 class="article__title">O mnie</h2>
+            <p>Jestem początkującym programistą. Obecnie pracuje jako operator frezarek CNC. Studjuję również dyplomację na ASW.</p>
+            <p>Moje życie zawodowe skupia się obecnie na trzech rzeczach. Są to nauka programowania, praca z maszynami CNC oraz studia.</p>
+            <section>
+                <h3 class="section__title">Nauka programowania.</h3> 
+                <p>Naukę programowania zacząłem na studiach od C++. Poznałem dzięki temu podstawy pracy z kodem kompilowanym oraz co to są wskaźniki.</p>
+                <p>Następnie skupiłem się na nauce języka Python najpierw samodzielnie z ogólnodostępnych materiałów, a następnie na kursie z Django.</p>
+                <p>Po kursie większą uwagę skupiłem na lepszym poznaniu frontendu - na językach HTML i CSS, a następnie JavaScript.</p>     
+            </section>
+            <section>
+                <h3 class="section__title">Praca z maszynami CNC</h3>
+                <p>Praca z maszynami CNC pozwala mi na opcowanie z kodem programów stosowanych przy produkcji. Jednym z moich obowiązkuw jest wdrarzanie gotowych programów zmieniając parametry początkowe aby odpowiadały bierzącej produkcji oraz nieustanna kontrola produkcji i dostosowywanie parametrów programu np. do poziomu zurzycia narzędzi.</p>
+            </section>
+            <section>
+                <h3 class="section__title">Studia</h3>
+                <p>W 2022 roku zaczołem studia niestacjonarne na kierunkiu Obrona międzynarodowa i dyplomacja w Akademii Sztuki Wojennej w Warszawie.</p>
+                <p>Umożliwia mi to polepszanie umiejętności zwłąszcza w takich dziedzinach jak praca zespołowa, komunikacja wewnątrz zespołów oraz wystąpienia publiczne.</p>
+            </section>
         </article>
 
         <hr>
 
         <article id="Kontakt">
-            <h2>Kontak</h2>
+            <h2 class="article__title">Kontak</h2>
         </article>
     </main>
 
@@ -119,5 +150,7 @@
             <a href="#">Menu</a>
         </p>
     </footer>
+
+    <script src="/js/index.js"></script>
 </body>
 </html>
