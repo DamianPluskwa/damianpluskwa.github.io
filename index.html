@@ -7,6 +7,7 @@
     <title>Portfolio - Damian Pluskwa</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
 
@@ -28,13 +29,16 @@
         <nav aria-label="primary-navigation" class="nav">
             <ul class="nav__list">
                 <li class="nav__item">
+                    <a href="#" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
                     <a href="#technologies" class="nav__link">Technologies</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#projekty" class="nav__link">Projekty</a>
+                    <a href="#about-me" class="nav__link">About me</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#oMnie" class="nav__link">O mnie</a>
+                    <a href="#my-work" class="nav__link">My Work</a>
                 </li>
                 <li class="nav__item">
                     <a href="#kontakt" class="nav__link">Kontakt</a>
@@ -83,71 +87,78 @@
             </ul>
         </article>
 
-        <hr>
+        <!-- About Me -->
 
-        <article id="projekty">
-            <h2 class="article__title">Projekty</h2>
-            <section>
-                <h3 class="section__title">Aplikacja biblioteczna</h3>
-                <ul>
-                    <li>python</li>
-                    <li>django</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>sqlite</li>
-                    <li>Git</li>
-                </ul>
-                <p>Aplikacja służąca do katalogowania oraz wypożyczania książek zlokalizowanych w bazie danych.</p>
-            </section>
-            <section>
-                <h3 class="section__title">Strona do portfolio</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Git</li>
-                </ul>
-                <p>Strona initernetowa prezentująca moje umiejętności.</p>
-            </section>
+        <article id="about-me" class="about-me">
+            <h2 class="article__title article_title--about">About me</h2>
+            <p class="section__subtitle section__subtitle--about">Jestem początkującym programistą. Obecnie pracuje jako operator frezarek CNC. Studjuję również dyplomację na ASW.</p>
+            
+            <div class="about-me__body">
+                <p>Moje życie zawodowe skupia się obecnie na trzech rzeczach. Są to nauka programowania, praca z maszynami CNC oraz studia.</p>
+                <div>
+                    <h3 class="section__title">Nauka programowania.</h3> 
+                    <p>Naukę programowania zacząłem na studiach od C++. Poznałem dzięki temu podstawy pracy z kodem kompilowanym oraz co to są wskaźniki.</p>
+                    <p>Następnie skupiłem się na nauce języka Python najpierw samodzielnie z ogólnodostępnych materiałów, a następnie na kursie z Django.</p>
+                    <p>Po kursie większą uwagę skupiłem na lepszym poznaniu frontendu - na językach HTML i CSS, a następnie JavaScript.</p>     
+                </div>
+                <div>
+                    <h3 class="section__title">Praca z maszynami CNC</h3>
+                    <p>Praca z maszynami CNC pozwala mi na opcowanie z kodem programów stosowanych przy produkcji. Jednym z moich obowiązkuw jest wdrarzanie gotowych programów zmieniając parametry początkowe aby odpowiadały bierzącej produkcji oraz nieustanna kontrola produkcji i dostosowywanie parametrów programu np. do poziomu zurzycia narzędzi.</p>
+                </div>
+                <div>
+                    <h3 class="section__title">Studia</h3>
+                    <p>W 2022 roku zaczołem studia niestacjonarne na kierunkiu Obrona międzynarodowa i dyplomacja w Akademii Sztuki Wojennej w Warszawie.</p>
+                    <p>Umożliwia mi to polepszanie umiejętności zwłąszcza w takich dziedzinach jak praca zespołowa, komunikacja wewnątrz zespołów oraz wystąpienia publiczne.</p>
+                </div>
+            </div>
+
+            <img src="/img/picture-2.jpg" alt="Damian and the see" class="about-me__img">
         </article>
 
-        <hr>
+         <!-- My Work -->
 
-        <article id="oMnie">
-            <h2 class="article__title">O mnie</h2>
-            <p>Jestem początkującym programistą. Obecnie pracuje jako operator frezarek CNC. Studjuję również dyplomację na ASW.</p>
-            <p>Moje życie zawodowe skupia się obecnie na trzech rzeczach. Są to nauka programowania, praca z maszynami CNC oraz studia.</p>
-            <section>
-                <h3 class="section__title">Nauka programowania.</h3> 
-                <p>Naukę programowania zacząłem na studiach od C++. Poznałem dzięki temu podstawy pracy z kodem kompilowanym oraz co to są wskaźniki.</p>
-                <p>Następnie skupiłem się na nauce języka Python najpierw samodzielnie z ogólnodostępnych materiałów, a następnie na kursie z Django.</p>
-                <p>Po kursie większą uwagę skupiłem na lepszym poznaniu frontendu - na językach HTML i CSS, a następnie JavaScript.</p>     
-            </section>
-            <section>
-                <h3 class="section__title">Praca z maszynami CNC</h3>
-                <p>Praca z maszynami CNC pozwala mi na opcowanie z kodem programów stosowanych przy produkcji. Jednym z moich obowiązkuw jest wdrarzanie gotowych programów zmieniając parametry początkowe aby odpowiadały bierzącej produkcji oraz nieustanna kontrola produkcji i dostosowywanie parametrów programu np. do poziomu zurzycia narzędzi.</p>
-            </section>
-            <section>
-                <h3 class="section__title">Studia</h3>
-                <p>W 2022 roku zaczołem studia niestacjonarne na kierunkiu Obrona międzynarodowa i dyplomacja w Akademii Sztuki Wojennej w Warszawie.</p>
-                <p>Umożliwia mi to polepszanie umiejętności zwłąszcza w takich dziedzinach jak praca zespołowa, komunikacja wewnątrz zespołów oraz wystąpienia publiczne.</p>
-            </section>
+         <article id="my-work" class="my-work">
+            <h2 class="article__title">My work</h2>
+            <p class="article__subtitle article__subtitle--my-work">A selection of my range of work</p>
+            <div class="portfolio">
+                <section class="portfolio-item">
+                    <h3 class="section__title">Aplikacja biblioteczna</h3>
+                    <ul>
+                        <li>python</li>
+                        <li>django</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>sqlite</li>
+                        <li>Git</li>
+                    </ul>
+                    <p>Aplikacja służąca do katalogowania oraz wypożyczania książek zlokalizowanych w bazie danych.</p>
+                </section>
+                <section class="portfolio-item">
+                    <h3 class="section__title">Strona do portfolio</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Git</li>
+                    </ul>
+                    <p>Strona initernetowa prezentująca moje umiejętności.</p>
+                </section>
+            </div>
         </article>
 
-        <hr>
-
-        <article id="Kontakt">
-            <h2 class="article__title">Kontak</h2>
-        </article>
     </main>
 
-    <hr>
 
-    <footer>
+    <footer class="footer">
+        <a href="mailto:pluskwadamian@interia.pl" class="footer__link">pluskwadamian@interia.pl</a>
+
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/DamianPluskwa/" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/damian-pluskwa-699110216/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.codewars.com/users/DamianPluskwa" target="_blank"><img src="/img/codewars-logo.svg" alt="codewars logo" class="social-list__img"></a></li>
+        </ul>
+
         <p>
             &lt;&lt;&lt; &copy; Damian Pluskwa&gt;&gt;&gt;
-        </p>
-        <p>
-            <a href="#">Menu</a>
         </p>
     </footer>
 
